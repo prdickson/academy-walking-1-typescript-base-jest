@@ -6,8 +6,14 @@ describe("fizzbuzz", () => {
     expect(value).toEqual(1);
   });
 
-  it('returns fizz, when given 3', ()  => {
+  it("returns fizz, when given 3", () => {
     const value = fizzbuzz(3);
-    expect(value).toEqual('Fizz');
-  })
+    expect(value).toEqual("Fizz");
+  });
+
+  it("returns fizz, when given 6", () => {
+    const value = fizzbuzz(6);
+    expect(value).toEqual("Fizz");
+  });
+
 });
