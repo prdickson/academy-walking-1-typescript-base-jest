@@ -1,4 +1,4 @@
 export function fizzbuzz(value: number) {
-  if (value === 3 || value === 6) return "Fizz";
+  if (value % 3 === 0) return "Fizz";
   return value;
 }

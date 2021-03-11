@@ -6,19 +6,13 @@ describe("fizzbuzz", () => {
     expect(value).toEqual(1);
   });
 
-  it("returns fizz, when given 3", () => {
-    const value = fizzbuzz(3);
-    expect(value).toEqual("Fizz");
+  it("returns fizz, when given value is divisible by 3", () => {
+    expect(fizzbuzz(3)).toEqual("Fizz");
+    expect(fizzbuzz(6)).toEqual("Fizz");
+    expect(fizzbuzz(9)).toEqual("Fizz");
   });
 
-  it("returns fizz, when given 6", () => {
-    const value = fizzbuzz(6);
-    expect(value).toEqual("Fizz");
+  it("returns buzz, when given a value of 5", () => {
+    expect(fizzbuzz(5)).toEqual("Buzz");
   });
-
-  it("returns fizz, when given 9", () => {
-    const value = fizzbuzz(9);
-    expect(value).toEqual("Fizz");
-  })
-
 });
