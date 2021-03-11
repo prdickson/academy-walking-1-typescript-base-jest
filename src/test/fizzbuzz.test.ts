@@ -23,6 +23,7 @@ describe("fizzbuzz", () => {
   it("returns FizzBuzz, when given value is divisible by 3 and 5", () => {
     expect(fizzbuzz(15)).toEqual("FizzBuzz");
     expect(fizzbuzz(30)).toEqual("FizzBuzz");
+    expect(fizzbuzz(45)).toEqual("FizzBuzz");
   });
 
 });
