@@ -16,4 +16,9 @@ describe("fizzbuzz", () => {
     expect(value).toEqual("Fizz");
   });
 
+  it("returns fizz, when given 9", () => {
+    const value = fizzbuzz(9);
+    expect(value).toEqual("Fizz");
+  })
+
 });
