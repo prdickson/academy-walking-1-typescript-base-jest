@@ -12,15 +12,14 @@ describe("fizzbuzz", () => {
     expect(fizzbuzz(9)).toEqual("Fizz");
   });
 
-  it("returns buzz, when given a value of 5", () => {
+  it.each([[5, 10, 20]], "returns buzz, when given value is divisible by 5", (n) => {
+    expect(fizzbuzz(n)).toEqual("Buzz");
+  });
+
+  it("returns buzz, when given value is divisible by 5", () => {
     expect(fizzbuzz(5)).toEqual("Buzz");
-  });
-
-  it("returns buzz, when given a value of 10", () => {
     expect(fizzbuzz(10)).toEqual("Buzz");
-  });
-
-  it("returns buzz, when given a value of 15", () => {
     expect(fizzbuzz(20)).toEqual("Buzz");
   });
+
 });
