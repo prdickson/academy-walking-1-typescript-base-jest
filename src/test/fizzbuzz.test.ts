@@ -15,4 +15,8 @@ describe("fizzbuzz", () => {
   it("returns buzz, when given a value of 5", () => {
     expect(fizzbuzz(5)).toEqual("Buzz");
   });
+
+  it("returns buzz, when given a value of 10", () => {
+    expect(fizzbuzz(10)).toEqual("Buzz");
+  });
 });
